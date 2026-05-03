@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+
+    <h2 class="text-center mb-4">Dashboard</h2>
+
+    <div class="d-flex justify-content-center gap-3 mb-4">
+        <a href="/projects" class="btn btn-primary">Projects</a>
+        <a href="/tasks" class="btn btn-success">Tasks</a>
+        <a href="/logout" class="btn btn-danger">Logout</a>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="card p-3 shadow">
+                <h5>Total Tasks</h5>
+                <h3>{{ total }}</h3>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 shadow text-success">
+                <h5>Completed</h5>
+                <h3>{{ completed }}</h3>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 shadow text-warning">
+                <h5>Pending</h5>
+                <h3>{{ pending }}</h3>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
